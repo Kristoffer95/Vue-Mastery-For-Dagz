@@ -1,0 +1,57 @@
+{
+  "name": "leanist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "lodash": "^4.17.11",
+    "map-state-vmodel": "^0.3.0",
+    "vue": "^2.5.17",
+    "vue-animejs": "^1.0.2",
+    "vue-clickaway": "^2.2.2",
+    "vue-filter": "^0.2.5",
+    "vue-i18n": "^8.3.1",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.1",
+    "vue-sweetalert2": "^1.5.7",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.5",
+    "@vue/cli-service": "^3.1.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

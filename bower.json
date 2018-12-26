@@ -1,0 +1,21 @@
+{
+  "name": "leanist",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Kristoffer95 <kristoffer.gonzaga@urios.edu.ph>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cssist": "^1.1.24",
+    "reset.css": "^1.1.3"
+  }
+}
