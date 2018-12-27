@@ -1,21 +1,23 @@
 <template>
   <div>
-    <div class="bo-1px p-r w-100vh h-200px">
-      {{ name }}
+    <div>
+      <cart-v></cart-v>
     </div>
   </div>
 </template>
 <script>
+import CartV from './views/CartV.vue'
+
 export default {
   name: 'app',
   data () {
     return {
-      name: ''
     }
   },
   extends: {},
   props: {},
   components: {
+    'cart-v': CartV
   },
   computed: {
   },
