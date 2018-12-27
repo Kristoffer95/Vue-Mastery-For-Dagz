@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <div v-for="(product, product_index) in productColorAndImageName" :key="product_index"
       class="w-60px h-60px mt-20px"
       :style="{'background-color': product.color}"

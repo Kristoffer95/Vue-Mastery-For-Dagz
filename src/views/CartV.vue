@@ -3,8 +3,9 @@
     <div class="w-400D1800M100 h-400px cen-y p-r f-l">
       <!-- SOCKS IMAGES -->
       <img class="w-100D1 h-100" 
-      :src="getImage('greenSock.jpg')"
+      :src="imgChange(this.products[this.selectedColor].img)"
       >
+      <!-- getImage('greenSock.jpg') -->
     </div>
     <div class="f-l cen-y p-r">
       <div class="w-100px h-100px p-r">
@@ -51,9 +52,13 @@ export default {
   methods: {
     colorChange (data) {
       this.selectedColor = data
+      // console.log(this.selectedColor = data);
     },
     getImage (img_name) {
       return require('@/assets/images/' + img_name)
+    },
+    imgChange(img) {
+      return this.getImage(img)
     }
   },
   components: {
