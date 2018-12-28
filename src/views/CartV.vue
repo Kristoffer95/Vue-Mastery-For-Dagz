@@ -9,14 +9,15 @@
     </div>
     <div class="f-l cen-y p-r">
       <div class="w-100px h-100px p-r">
-        <stocks-c></stocks-c>
+        <stocks-c :productStocksLeft="this.products"></stocks-c>
       </div>
 
       <div>
-        <!-- Detials -->
+        <!-- DETAILS -->
       </div>
-
+      
       <div>
+        <!-- COLORS -->
         <colors-c :productColorAndImageName="this.products" @colorChange="colorChange"></colors-c>
       </div>
     </div>
