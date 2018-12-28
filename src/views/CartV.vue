@@ -8,8 +8,11 @@
       <!-- getImage('greenSock.jpg') -->
     </div>
     <div class="f-l cen-y p-r">
-      <div class="w-100px h-100px p-r">
-        <stocks-c :productStocksLeft="this.products"></stocks-c>
+      <div class="w-500px h-100px p-r">
+        <stocks-c 
+        :productStocksLeft="this.products"
+        :selectedColor="this.selectedColor"
+        ></stocks-c>
       </div>
 
       <div>
@@ -18,7 +21,9 @@
       
       <div>
         <!-- COLORS -->
-        <colors-c :productColorAndImageName="this.products" @colorChange="colorChange"></colors-c>
+        <colors-c 
+        :productColorAndImageName="this.products"
+        @colorChange="colorChange"></colors-c>
       </div>
     </div>
   </div>
@@ -45,7 +50,7 @@ export default {
           id: 221,
           color: 'blue',
           img: 'blueSock.jpg',
-          stocks: 100
+          stocks:0
         }
       ]
     }

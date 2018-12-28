@@ -1,11 +1,11 @@
 <template>
-  <div class="w-500px h-500px bo-1px">
+  <div class="w-100">
     <h1>Vue Mastery Socks</h1>
-    <p>Shipping: 0</p>
+    <p>Shipping: {{ this.productStocksLeft[this.selectedColor].stocks }}</p>
     <!-- CONTINUE HERE... -->
     
-    <p>In Stock</p>
-    <!-- <p>Out of Stock</p> -->
+    <p v-if="this.productStocksLeft[this.selectedColor].stocks > 10">In Stock</p>
+    <p v-else>Out of Stock</p>
   </div>
 </template>
 
@@ -17,6 +17,10 @@ export default {
     productStocksLeft: {
       type: Array,
       required: true
+    },
+    selectedColor: {
+      type: Number,
+      required: true
     }
   },
   data(){
@@ -25,7 +29,13 @@ export default {
   components: {},
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+    // stocksLeft() {
+    //   if (this.stocks > 0) {
+    //     return this.stocks
+    //   }
+    // }
+  },
   beforeCreate(){},
   mounted(){}
 }
